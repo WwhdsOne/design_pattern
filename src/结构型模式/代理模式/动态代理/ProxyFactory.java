@@ -1,4 +1,4 @@
-package 结构型模式.动态代理;
+package 结构型模式.代理模式.动态代理;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -24,7 +24,7 @@ public class ProxyFactory {
         Class clazz = trainStation.getClass();
         SellTickets sellTickets = (SellTickets) Proxy.newProxyInstance(
                 clazz.getClassLoader(),
-                clazz.getInterfaces(),
+                new Class[]{SellTickets.class},
                 new InvocationHandler() {
                     /*
                         proxy:代理对象

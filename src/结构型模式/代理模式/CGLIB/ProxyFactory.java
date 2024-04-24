@@ -1,4 +1,4 @@
-package 结构型模式.CGLIB;
+package 结构型模式.代理模式.CGLIB;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

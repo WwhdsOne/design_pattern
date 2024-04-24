@@ -1,4 +1,4 @@
-package 结构型模式.动态代理;
+package 结构型模式.代理模式.动态代理;
 
 /**
  * @author Wwh
@@ -10,5 +10,14 @@ public class TrainStation implements SellTickets {
     @Override
     public void sell() {
         System.out.println("火车站卖票");
+    }
+
+    @Override
+    public void refund() {
+        System.out.println("火车站退票");
+    }
+
+    public void test() {
+        System.out.println("火车站测试");
     }
 }

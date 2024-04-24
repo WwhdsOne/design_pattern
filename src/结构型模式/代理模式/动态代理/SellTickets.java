@@ -1,4 +1,4 @@
-package 结构型模式.动态代理;
+package 结构型模式.代理模式.动态代理;
 
 /**
  * @author Wwh
@@ -8,4 +8,7 @@ package 结构型模式.动态代理;
  **/
 public interface SellTickets {
     void sell();
+
+    void refund();
+
 }

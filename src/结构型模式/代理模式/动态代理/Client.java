@@ -1,6 +1,4 @@
-package 结构型模式.动态代理;
-
-import 结构型模式.静态代理.ProxyPoint;
+package 结构型模式.代理模式.动态代理;
 
 /**
  * @author Wwh
@@ -13,10 +11,7 @@ public class Client {
         ProxyFactory proxyFactory = new ProxyFactory();
         SellTickets proxyObject = proxyFactory.getProxyObject();
         proxyObject.sell();
-        System.out.println(proxyObject.getClass());
-        while ( true ){
-
-        }
+        proxyObject.refund();
 
     }
 }
