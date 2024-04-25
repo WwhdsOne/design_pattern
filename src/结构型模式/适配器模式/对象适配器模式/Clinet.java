@@ -1,5 +1,7 @@
 package 结构型模式.适配器模式.对象适配器模式;
 
+import java.math.BigInteger;
+
 /**
  * @author Wwh
  * @ProjectName design_pattern
@@ -19,5 +21,6 @@ public class Clinet {
         TFCard tfCard = new TFCardImpl();
         String msg1 = computer.readSDCard(new SDAdapterTF(tfCard));
         System.out.println(msg1);
+
     }
 }
