@@ -1,4 +1,4 @@
-package 创建者模式.工厂模式.抽象工厂类;
+package 创建者模式.抽象工厂类;
 
 /**
  * @author Wwh
